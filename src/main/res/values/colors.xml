@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="unclickedColor">#0465B3</color>
+    <color name="clickedColor">#053B67</color>
+    <color name="borderColor">#2C2A2A</color>
+    <color name="greyColor">#949494</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#EF2121</color>
+    <color name="transparent">#00000000</color>
+
+   <color name="colorAccent1">#6200ee</color>
+
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#3E3B3B</color>
+    <color name="textColorPrimary">#6200ee</color>
+    <color name="windowBackground">#6200ee</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#6200ee</color>
+</resources>
