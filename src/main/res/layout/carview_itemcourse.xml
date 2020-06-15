@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    android:clipToPadding="false">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:gravity="center"
+                app:layout_constraintVertical_chainStyle="spread_inside"
+                android:id="@+id/tv_courseName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên học phần"
+                android:textSize="18sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/unclickedColor"
+                app:layout_constraintBottom_toTopOf="@id/tv_numMember"
+                />
+            <TextView
+                android:gravity="center"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                android:id="@+id/tv_numMember"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thành viên"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginStart="4dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_courseName"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/tv_courseHost"
+                app:layout_constraintRight_toLeftOf="@id/tv_numWord"/>
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_numWord"
+                android:text="20 từ"
+                android:textSize="16sp"
+                android:layout_margin="4dp"
+                app:layout_constraintLeft_toRightOf="@id/tv_numMember"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_courseName"
+                app:layout_constraintBottom_toTopOf="@id/tv_courseHost"/>
+            <TextView
+                android:gravity="start"
+                android:textSize="18sp"
+                android:id="@+id/tv_courseHost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_numMember"
+                android:text="host"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/clickedColor"
+                android:textColor="@color/white"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

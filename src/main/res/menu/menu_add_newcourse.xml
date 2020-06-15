@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/inviteFriend"
+        android:icon="@drawable/ic_invite_friend"
+        app:showAsAction="always"
+        android:title="@string/inviteFriend"/>
+    <item android:id="@+id/confirm_addCourse"
+        android:icon="@drawable/ic_done"
+        app:showAsAction="always"
+        android:title="Done" />
+</menu>
