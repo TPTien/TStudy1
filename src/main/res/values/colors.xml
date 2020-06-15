@@ -7,14 +7,18 @@
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
     <color name="red">#EF2121</color>
+    <color name="pink">#ec407a</color>
     <color name="transparent">#00000000</color>
 
    <color name="colorAccent1">#6200ee</color>
+    <color name="colorGreen">#20AA26</color>
+    <color name="yellow">#E4BF19</color>
 
     <color name="colorPrimary">#FFFFFF</color>
     <color name="colorPrimaryDark">#3E3B3B</color>
-    <color name="textColorPrimary">#6200ee</color>
-    <color name="windowBackground">#6200ee</color>
+    <color name="textColorPrimary">#3E3B3B</color>
+    <color name="windowBackground">#FFFFFF</color>
     <color name="navigationBarColor">#000000</color>
     <color name="colorAccent">#6200ee</color>
+    <color name="fabColor">#00796b</color>
 </resources>

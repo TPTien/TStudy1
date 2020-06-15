@@ -22,4 +22,31 @@ n in the middle of text. All the Lorem Ipsum generators on the Internet tend to 
     <string name="createAccount">Tạo tài khoản của bạn</string>
     <string name="ifNotAcccount">Bạn chưa có tài khoản?</string>
     <string name="gotAccount">Bạn đã có tài khoản?</string>
+    <string name="saveAccount">Lưu mật khẩu</string>
+    //
+    <string name="loginSuccess">Đăng nhâp thành công.</string>
+    <string name="incorrectAccount">Thông tin tài khoản không chính xác!</string>
+    <string name="pleaseTypeFull">Vui lòng nhập đầy đủ thông tin!</string>
+    //
+    <string name="registerSuccess">Đăng kí thành công.</string>
+    <string name="userExist">Tài khoản này đã tồn tại!</string>
+    <string name="somethingWrong">Đã có lỗi xảy ra. Vui lòng thử lại!</string>
+    //
+    <string name="member"> thành viên</string>
+    <string name="word"> Từ vựng</string>
+    //
+    <string name="youDontHaveCourse">Bắt đầu học tập thôi nào!</string>
+    <string name="createCourse">Tạo học phần</string>
+    <string name="joinCourse">Tham gia học phần</string>
+    <string name="inputNameCourse">Nhập tên học phần</string>
+    <string name="inputTopicCourse">Nhập chủ đề</string>
+    <string name="friendsCourse">Bạn bè</string>
+    <string name="search">Search</string>
+    <string name="searchCourse">Tìm kiếm học phần</string>
+    <string name="searchCourseCreate">Tìm kiếm học phần đã tạo</string>
+    <string name="inviteCourses">Lời mời tham gia</string>
+    <string name="titleCreateCourse">Tạo học phần</string>
+    <string name="yourVocabulary">Từ vựng của bạn</string>
+    <string name="inviteFriend">Mời bạn bè</string>
+    <string name="meaning">Nghĩa</string>
 </resources>

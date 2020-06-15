@@ -22,6 +22,8 @@ public class RegistrationActivity extends AppCompatActivity {
     EditText edt_nameDisplay, edt_username, edt_password;
     Button btn_signUp, btn_login;
     ProgressBar pb_registerLoading;
+    final static String FINAL_RESPONSE_OK ="ok";
+    final static String FINAL_RESPONSE_EXIST ="exist";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,7 +66,7 @@ public class RegistrationActivity extends AppCompatActivity {
         password=edt_password.getText().toString();
         displayName =edt_nameDisplay.getText().toString();
         if(name.isEmpty()|| password.isEmpty() || displayName.isEmpty()){
-            Toast.makeText(this,"Vui lòng điền đầy đủ thông tin yêu cầu!",Toast.LENGTH_LONG).show();
+            Toast.makeText(this,R.string.pleaseTypeFull,Toast.LENGTH_LONG).show();
         }
         else {
             //
@@ -76,14 +78,14 @@ public class RegistrationActivity extends AppCompatActivity {
             call.enqueue(new Callback<User>() {
                 @Override
                 public void onResponse(Call<User> call, Response<User> response) {
-                    if(response.body().getResponse().equals("ok")){
-                        Toast.makeText(RegistrationActivity.this,"Register success",Toast.LENGTH_LONG).show();
+                    if(response.body().getResponse().equals(FINAL_RESPONSE_OK)){
+                        Toast.makeText(RegistrationActivity.this,R.string.registerSuccess,Toast.LENGTH_LONG).show();
                     }
-                    else if(response.body().getResponse().equals("exist")){
-                        Toast.makeText(RegistrationActivity.this,"User already exist!",Toast.LENGTH_LONG).show();
+                    else if(response.body().getResponse().equals(FINAL_RESPONSE_EXIST)){
+                        Toast.makeText(RegistrationActivity.this,R.string.userExist,Toast.LENGTH_LONG).show();
                     }
                     else {
-                        Toast.makeText(RegistrationActivity.this,"Something went wrong. Try again",Toast.LENGTH_LONG).show();
+                        Toast.makeText(RegistrationActivity.this,R.string.somethingWrong,Toast.LENGTH_LONG).show();
                     }
                     pb_registerLoading.setVisibility(View.GONE);
                     btn_signUp.setClickable(true);

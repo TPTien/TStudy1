@@ -4,21 +4,21 @@
         android:state_pressed="false">
         <shape android:shape="rectangle">
             <corners android:radius="40dp"/>
-            <solid android:color="@color/unclickedColor"/>
+            <solid android:color="@color/colorAccent"/>
         </shape>
     </item>
     <item android:state_enabled="true"
         android:state_pressed="true">
         <shape android:shape="rectangle">
             <corners android:radius="40dp"/>
-            <solid android:color="@color/clickedColor"/>
+            <solid android:color="@color/colorAccent1"/>
         </shape>
     </item>
     <item android:state_enabled="true"
         android:state_focused="true">
         <shape android:shape="rectangle">
             <corners android:radius="40dp"/>
-            <solid android:color="@color/clickedColor"/>
+            <solid android:color="@color/colorAccent1"/>
         </shape>
     </item>
 </selector>

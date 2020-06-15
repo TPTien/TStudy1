@@ -1,7 +1,7 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
+     Base application theme.
+    <style name="MyMaterialTheme" parent="Theme.MaterialComponents">
         <item name="android:windowContentTransitions">true</item>
         <item name="android:windowAllowEnterTransitionOverlap">true</item>
         <item name="android:windowAllowReturnTransitionOverlap">true</item>
@@ -9,12 +9,32 @@
         <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
     </style>
 
-    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="windowNoTitle">true</item>
-        <item name="windowActionBar">false</item>
+<!--    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">-->
+<!--        <item name="windowNoTitle">true</item>-->
+<!--        <item name="windowActionBar">false</item>-->
+<!--        <item name="colorPrimary">@color/colorPrimary</item>-->
+<!--        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+<!--        <item name="colorAccent">@color/colorAccent</item>-->
+<!--    </style>-->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-    </style>
 
+
+    </style>
+<!--    <style name="Widget.App.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">-->
+<!--        <item name="boxStrokeColor">@color/colorAccent1</item>-->
+<!--        <item name="hintTextColor">@color/colorAccent1</item>-->
+<!--        <item name="android:textColor">@color/colorPrimaryDark</item>-->
+<!--        <item name="backgroundTint">@color/colorAccent1</item>-->
+<!--    </style>-->
+    <style name="NewCourseTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="windowActionBar">false</item>
+    </style>
+    
+    <style name="CustomDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="windowNoTitle">false</item>
+    </style>
 </resources>
